@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+   
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    {%block head%}
+    <title>APEX-Future rise from here</title>
+    {%endblock%}
+	{% load static %}
+	<link type="text/css" rel="stylesheet" href="{% static 'Books/style.css' %}">
+</head>
+<body>
+	<h1 align="center">APEX</h1>
+	<div class='container-fluid'>
+		<ul>
+			<li>
+				<a href="Home.html">Home</a>
+			</li>
+        	<li>
+        		<a href="Contact.html">Contact</a>
+        	</li>
+        	<li>
+        		<a href="About.html">About</a>
+        	</li>
+        	<li>
+        		<a href="Login.html">LogIn</a>
+        	</li>
+    	</ul> 
+    {%block body%}
+    {%endblock%}	
+    </div>	   
+    
+    {%for number in numbers%}
+    {{number}}
+    {% endfor %}
+</body>
+</html>

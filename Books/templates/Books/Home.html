@@ -1,0 +1,32 @@
+{%extends 'Base.html'%}
+{%block body%}
+<svg height="130" width="500">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"
+      style="stop-color:rgb(255,255,0);stop-opacity:1" />
+      <stop offset="100%"
+      style="stop-color:rgb(255,0,0);stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <ellipse cx="110" cy="70" rx="95" ry="55" fill="url(#grad1)" />
+  <text fill="#ffffff" font-size="45" font-family="Verdana"
+  x="50" y="86">APEX</text>
+
+</svg>
+
+<br><br><br>
+<center>
+  <input type='text' name='Shubham'><br><br>
+  <input type='submit' value='search'>
+  <br><br><br><br><br><br><br>
+  <video width="320" height="240" controls >
+    <source src="movie.mp4" type="video/mp4">
+    <source src="movie.ogg" type="video/ogg">
+    Your browser does not support the video tag.
+  </video>
+</center>
+
+{%endblock%}
+
+

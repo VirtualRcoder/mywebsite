@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!--{% load static %}
+	<link type="text/css" rel="stylesheet" href="{% static 'Books/style.css' %}">-->
+	<title>
+	</title>
+	</head>
+	<body style="background-color:silver;">
+		<h1 style=" background-color:orange; color:red;font-size: 120px;border: 10px solid black;text-align: center">REGISTRATION PAGE</h1>
+		<div class='container-fluid'>
+			<br><br><br>
+			<fieldset style="font-size: 19px">
+				<div class='jumbotron'>
+					<form action="Login.html" autocomplete="off" method="#">
+						First Name  <input type="text" name="firstname" size="9" maxlength="13" required>    Last Name   <input type="text" name="lastname" size="9" maxlength="15" required><br><br>
+			
+						DOB  <input type="date" name="bdy" required>
+						Select the time <input type="time" name="usr_time"><br><br>
+						Gender  <select name="sex">
+  									<option value="Select" disabled>Select</option>
+  									<option value="Male">Male</option>
+									<option value="Female">Female</option>
+  									<option value="Transgender">Transgender</option>
+								</select><br><br>
+			
+						Mobile no. <input type="tel" name="Mobile no" size="6" placeholder="10 digit" maxlength="10" >
+						Email Address <input type="email" name="email" list="option" size="15" maxlength="30" required>
+										<datalist id="option">
+											<option value="@gmail">@gmail</option>
+											<option value="@outlook">@outlok</option>
+											<option value="@yahoo">@yahoo</option>
+										</datalist><br><br>
+			
+
+						Color  <input type="color" name="favcolor"><!--input type="week">also exist but run in safari or higher version as like type="tel"--> 
+						Add your homepage <input type="url" name="homepage"><br><br>
+						Password <input type="password" name="Password" placeholder="Enter password" size="15" required>
+						Confirm password<input type="password" name="Password" placeholder="Re-enter password" size="15" required><br><br>
+
+			
+						<!--working of below is due to php so not working here-->
+  						<input type="range" id="a" name="a" value="50">
+ 						100 +
+  						<input type="number" id="b" name="b" value="50">
+  						=
+  						<output name="x" for="a b"></output>
+			
+
+						<h5 style="color:blue">By clicking Sign Up, you agree to our Terms,<br> Data Policy and Cookie Policy. You may<br> receive SMS notifications from us and can opt out at any time</h5>
+						<input type="submit" value="Submit" >
+						<input type="submit" formenctype="multipart/form-data" value="Submit as multipart Data" formmethod="post" value="forenctype Submit is used with method using POST as here">
+						<input type="submit" formnovalidate value="Submit without validation" >
+						<input type="submit" formtarget="_blank" value="Submit to a new window/tab">
+						<input type="reset">	
+					</form>
+				</div>	
+			</fieldset>
+		</div>
+	</body>
+</html>	

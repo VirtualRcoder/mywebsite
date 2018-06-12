@@ -1,0 +1,38 @@
+body{
+		background-image: url('Login.jpg');        
+
+    }
+fieldset{
+
+        background-color: silver; 
+
+}
+h1	{
+    	color: RED;
+    	background-color: YELLOW;
+    	text-align: center;
+  	}
+
+ul	 {
+		list-style: square inside color:red;
+		margin:0;
+		padding:0;
+		overflow:hidden;
+		background-color: #333333;
+		line-height:4; 
+		
+  	}
+
+li 	{ 
+		float:left;
+   	}
+		
+li a{
+		 color:white;
+		 text-align: center;
+		 padding: 16px;
+		 text-decoration:none;
+		 font-size: 18px;
+
+		 
+		 	}
